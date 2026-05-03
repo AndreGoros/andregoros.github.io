@@ -1,16 +1,26 @@
-# React + Vite
+# Página personal (GitHub Pages)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sitio minimalista construido con **React**, **Vite** y ESLint (`andregoros.github.io`). El CI publica **`dist/`** a **GitHub Pages** en cada `push` a **`main`** (workflow `.github/workflows/deploy-pages.yml`).
 
-Currently, two official plugins are available:
+**URL esperada:** `https://andregoros.github.io/` (tras configurar Pages y ejecutar el workflow al menos una vez).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Desarrollo local
 
-## React Compiler
+Ejecuta los comandos **desde WSL/Linux** en la carpeta del repo (`~/.../andregoros.github.io`), no desde `\\wsl.localhost\...` en PowerShell, para evitar problemas de `npm` y MIME con archivos JSX:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+npm install
+npm run dev
+```
 
-## Expanding the ESLint configuration
+## GitHub Pages (primera vez)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Repo → **Settings** → **Pages** → fuente **GitHub Actions**.
+2. Asegurate de tener **Workflow permissions** habituales permitidas (**Settings → Actions → General**).
+3. **Repositorio público**: en la capa gratuita, Pages típicamente necesita repo público para sitios públicos.
+4. Hacé `push` a `main`; en **Actions** revisá que el workflow verde sirva la URL anterior.
+
+Elige **una** estrategia de despliegue en Settings → Pages:
+
+- **Recomendada:** GitHub Actions (este repo).
+- **Alternativa:** `npm run deploy` (paquete `gh-pages`), que publica a la rama `gh-pages`. No mezcles ambas fuentes sin revisar Pages.
