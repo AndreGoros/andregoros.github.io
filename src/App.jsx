@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Code, Music, Brush, Search, Zap, Mail, Link, User, Info, Target, Dribbble } from 'lucide-react';
+import { Code, Search, Zap, Mail, Link, User, Target, Dribbble } from 'lucide-react';
 import './App.css';
 const INTERESTS = {
   frontal: {
