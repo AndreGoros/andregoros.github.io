@@ -1,6 +1,6 @@
-# Página personal (GitHub Pages)
+# Andre Goros | Portfolio Creativo
 
-Sitio minimalista construido con **React**, **Vite** y ESLint (`andregoros.github.io`). El CI publica **`dist/`** a **GitHub Pages** en cada `push` a **`main`** (workflow `.github/workflows/deploy-pages.yml`).
+Un portfolio interactivo y experimental construido con **React**, **Vite** y **Framer Motion**. La página presenta un mapa mental interactivo (cerebro) donde cada lóbulo representa un área de interés o habilidad diferente.
 
 **URL esperada:** `https://andregoros.github.io/` (tras configurar Pages y ejecutar el workflow al menos una vez).
 
