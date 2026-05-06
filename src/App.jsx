@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Code, Search, Zap, Mail, Link, User, Target, Dribbble } from 'lucide-react';
+import { Code, Search, Zap, Mail, Link, User, Info, Music } from 'lucide-react';
 import './App.css';
 const INTERESTS = {
   frontal: {
     id: 'frontal',
     title: '¿Quién soy?',
     description: 'Estudiante de Ciencia de Datos en el ITAM. Siempre en busca de algo nuevo que aprender, ya sea algo útil o solo por curiosidad.',
-    icon: <Code size={32} />,
+    icon: <User size={32} />,
     color: '#00d2ff'
   },
   parietal: {
@@ -28,14 +28,14 @@ const INTERESTS = {
     id: 'occipital',
     title: 'Debilidades',
     description: 'La espontaneidad no es mi fuerte; prefiero tener un plan. Lucho con un perfeccionismo excesivo y un lado competitivo que a veces me cuesta apagar.',
-    icon: <Target size={32} />,
+    icon: <Info size={32} />,
     color: '#ffcc00'
   },
   cerebellum: {
     id: 'cerebellum',
     title: 'Hobbies',
     description: 'Me gusta practicar cualquier deporte, especialmente fútbol americano. Me gustan los videojuegos, ver películas y series; especialmente de acción. Me relaja cocinar y leer cómics.',
-    icon: <Dribbble size={32} />,
+    icon: <Music size={32} />,
     color: '#ff5e00'
   }
 };
