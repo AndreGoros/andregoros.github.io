@@ -74,9 +74,9 @@ const BrainSVG = ({ activeLobe, onLobeClick }) => {
         whileTap={{ scale: 0.95 }}
       />
       
-      {/* Temporal Lobe (Green) - Scaled Up */}
+      {/* Temporal Lobe (Green) - Smoothed curves */}
       <motion.path
-        d="M90,200 C110,230 180,260 240,240 C260,230 260,180 240,150 C200,160 150,170 130,150 C120,160 100,180 90,200 Z"
+        d="M100,200 C110,230 180,260 240,240 C270,230 270,180 240,150 C210,160 150,170 120,150 C100,160 90,180 100,200 Z"
         className={`brain-lobe ${activeLobe === 'temporal' ? 'active' : ''}`}
         style={{ color: INTERESTS.temporal.color }}
         onClick={() => onLobeClick('temporal')}
@@ -84,9 +84,9 @@ const BrainSVG = ({ activeLobe, onLobeClick }) => {
         whileTap={{ scale: 0.95 }}
       />
       
-      {/* Cerebellum (Orange) - Moved 15px Up */}
+      {/* Cerebellum (Orange) - Smoothed curves */}
       <motion.path
-        d="M265,185 C275,225 265,255 240,265 C260,285 300,285 340,265 C365,255 365,225 315,195 C305,185 295,175 265,185 Z"
+        d="M265,185 C280,225 265,255 240,265 C260,285 300,285 340,265 C370,255 370,225 315,195 C305,185 290,175 265,185 Z"
         className={`brain-lobe ${activeLobe === 'cerebellum' ? 'active' : ''}`}
         style={{ color: INTERESTS.cerebellum.color }}
         onClick={() => onLobeClick('cerebellum')}
