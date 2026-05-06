@@ -116,25 +116,35 @@
   transition: border-radius 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Unique frames and animations per section */
+/* Unique frames, colors and animations per section */
 .info-panel.frontal { 
   border-radius: 30% 70% 40% 60% / 60% 30% 70% 40%;
+  border-color: var(--frontal-color);
+  box-shadow: 0 0 30px rgba(0, 210, 255, 0.1), inset 0 0 20px rgba(0, 210, 255, 0.05);
   animation: float-frontal 12s ease-in-out infinite;
 }
 .info-panel.parietal { 
-  border-radius: 70% 30% 60% 40% / 40% 70% 30% 60%; 
+  border-radius: 120px 30px 60px 40px / 40px 70px 30px 60%; 
+  border-color: var(--parietal-color);
+  box-shadow: 0 0 30px rgba(255, 0, 122, 0.1), inset 0 0 20px rgba(255, 0, 122, 0.05);
   animation: float-parietal 12s ease-in-out infinite;
 }
 .info-panel.temporal { 
   border-radius: 40% 60% 30% 70% / 70% 40% 60% 30%; 
+  border-color: var(--temporal-color);
+  box-shadow: 0 0 30px rgba(160, 254, 0, 0.1), inset 0 0 20px rgba(160, 254, 0, 0.05);
   animation: float-temporal 12s ease-in-out infinite;
 }
 .info-panel.occipital { 
   border-radius: 60% 40% 70% 30% / 30% 60% 40% 70%; 
+  border-color: var(--occipital-color);
+  box-shadow: 0 0 30px rgba(255, 204, 0, 0.1), inset 0 0 20px rgba(255, 204, 0, 0.05);
   animation: float-occipital 12s ease-in-out infinite;
 }
 .info-panel.cerebellum { 
   border-radius: 50% 50% 50% 50% / 60% 40% 60% 40%; 
+  border-color: var(--cerebellum-color);
+  box-shadow: 0 0 30px rgba(255, 94, 0, 0.1), inset 0 0 20px rgba(255, 94, 0, 0.05);
   animation: float-cerebellum 12s ease-in-out infinite;
 }
 
