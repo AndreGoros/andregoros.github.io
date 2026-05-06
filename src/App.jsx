@@ -1,42 +1,41 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Code, Music, Brush, Search, Zap, Mail, Link, User, Info } from 'lucide-react';
+import { Code, Music, Brush, Search, Zap, Mail, Link, User, Info, Target, Dribbble } from 'lucide-react';
 import './App.css';
-
 const INTERESTS = {
   frontal: {
     id: 'frontal',
-    title: 'Lógica & Código',
-    description: 'El motor de mi curiosidad. Me encanta resolver problemas complejos, arquitectar sistemas escalables y aprender nuevas tecnologías.',
+    title: '¿Quién soy?',
+    description: 'Estudiante de Ciencia de Datos en el ITAM. Siempre en busca de algo nuevo que aprender, ya sea algo útil o solo por curiosidad.',
     icon: <Code size={32} />,
     color: '#00d2ff'
   },
   parietal: {
     id: 'parietal',
-    title: 'Creatividad & Diseño',
-    description: 'Donde la forma encuentra la función. Disfruto creando interfaces intuitivas y explorando el lado estético de la tecnología.',
-    icon: <Brush size={32} />,
+    title: '¿Por qué?',
+    description: 'Me obsesiona lo que hay detrás de las cosas. Mi mente funciona buscando patrones y tratando de entender el engranaje oculto de todo lo que me rodea.',
+    icon: <Search size={32} />,
     color: '#ff007a'
   },
   temporal: {
     id: 'temporal',
-    title: 'Música & Idiomas',
-    description: 'La comunicación en su estado más puro. Desde melodías hasta gramática, me fascina cómo nos conectamos.',
-    icon: <Music size={32} />,
+    title: 'Fortalezas',
+    description: 'Si algo me apasiona, le dedico el 100%. Soy una persona dedicada, enfocada y versátil dispuesta a trabajar en equipo o solo, según sea necesario.',
+    icon: <Zap size={32} />,
     color: '#a0fe00'
   },
   occipital: {
     id: 'occipital',
-    title: 'Visión & Análisis',
-    description: 'Procesamiento de datos y visión por computadora. Entender el mundo a través de patrones y representaciones visuales.',
-    icon: <Search size={32} />,
+    title: 'Debilidades',
+    description: 'La espontaneidad no es mi fuerte; prefiero tener un plan. Lucho con un perfeccionismo excesivo y un lado competitivo que a veces me cuesta apagar.',
+    icon: <Target size={32} />,
     color: '#ffcc00'
   },
   cerebellum: {
     id: 'cerebellum',
-    title: 'Hobby & Acción',
-    description: 'Equilibrio y movimiento. Deportes, viajes y cualquier actividad que me saque de la silla y me mantenga activo.',
-    icon: <Zap size={32} />,
+    title: 'Hobbies',
+    description: 'Me gusta practicar cualquier deporte, especialmente fútbol americano. Me gustan los videojuegos, ver películas y series; especialmente de acción. Me relaja cocinar y leer cómics.',
+    icon: <Dribbble size={32} />,
     color: '#ff5e00'
   }
 };
@@ -53,7 +52,7 @@ const BrainSVG = ({ activeLobe, onLobeClick }) => {
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
       />
-      
+
       {/* Parietal Lobe (Purple) - Extended Down and Sideways */}
       <motion.path
         d="M120,-25 C180,-50 280,-50 340,0 C360,40 340,100 290,130 C270,140 200,140 160,110 C150,50 120,-25 120,-25 Z"
@@ -63,7 +62,7 @@ const BrainSVG = ({ activeLobe, onLobeClick }) => {
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
       />
-      
+
       {/* Occipital Lobe (Yellow) - Scaled Up */}
       <motion.path
         d="M320,20 C370,40 400,100 400,160 C400,200 360,220 310,220 C290,220 270,200 270,140 C320,120 340,40 320,20 Z"
@@ -73,7 +72,7 @@ const BrainSVG = ({ activeLobe, onLobeClick }) => {
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
       />
-      
+
       {/* Temporal Lobe (Green) - Smoothed curves */}
       <motion.path
         d="M100,200 C110,230 180,260 240,240 C270,230 270,180 240,150 C210,160 150,170 120,150 C100,160 90,180 100,200 Z"
@@ -83,7 +82,7 @@ const BrainSVG = ({ activeLobe, onLobeClick }) => {
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
       />
-      
+
       {/* Cerebellum (Orange) - Smoothed curves */}
       <motion.path
         d="M265,185 C280,225 265,255 240,265 C260,285 300,285 340,265 C370,255 370,225 315,195 C305,185 290,175 265,185 Z"
@@ -132,7 +131,7 @@ function App() {
         <div className="brain-container">
           <BrainSVG activeLobe={activeLobe} onLobeClick={handleLobeClick} />
         </div>
-        
+
         <AnimatePresence mode="wait">
           {activeLobe && (
             <motion.div
@@ -161,7 +160,7 @@ function App() {
         <a href="https://github.com/andregoros" className="social-link" title="GitHub" target="_blank" rel="noopener noreferrer">
           <Link size={24} />
         </a>
-        <a href="mailto:andre@example.com" className="social-link" title="Email">
+        <a href="[EMAIL_ADDRESS]" className="social-link" title="Email">
           <Mail size={24} />
         </a>
         <a href="https://linkedin.com/in/andregoros" className="social-link" title="LinkedIn" target="_blank" rel="noopener noreferrer">
