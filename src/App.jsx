@@ -160,7 +160,7 @@ function App() {
         <a href="https://github.com/andregoros" className="social-link" title="GitHub" target="_blank" rel="noopener noreferrer">
           <Link size={24} />
         </a>
-        <a href="[EMAIL_ADDRESS]" className="social-link" title="Email">
+        <a href="mailto:larigoju3@gmail.com" className="social-link" title="Email">
           <Mail size={24} />
         </a>
         <a href="https://linkedin.com/in/andregoros" className="social-link" title="LinkedIn" target="_blank" rel="noopener noreferrer">
