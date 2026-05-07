@@ -13,7 +13,7 @@ const INTERESTS = {
   parietal: {
     id: 'parietal',
     title: '¿Por qué?',
-    description: 'Me obsesiona lo que hay detrás de las cosas. Mi mente funciona buscando patrones y tratando de entender el engranaje oculto de todo lo que me rodea.',
+    description: 'Me obsesiona lo que hay detrás de las cosas. Trato de buscar patrones y entender el porqué de las cosas.',
     icon: <Search size={32} />,
     color: '#ff007a'
   },
