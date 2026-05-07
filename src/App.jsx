@@ -107,6 +107,13 @@ function App() {
     <div className="app-container">
       <div className="neural-bg">
         <div className="neural-network"></div>
+        <div className="shooting-stars">
+          <div className="shooting-star"></div>
+          <div className="shooting-star"></div>
+          <div className="shooting-star"></div>
+          <div className="shooting-star"></div>
+          <div className="shooting-star"></div>
+        </div>
       </div>
 
       <header className="title-container">
